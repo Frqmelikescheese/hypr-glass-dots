@@ -43,4 +43,4 @@ Log out and log back in to enjoy your new Ultimate Glass setup!
 - `gh` (for pushing your own changes)
 
 ---
-*Created with 🤍 by frqme & Gemini CLI*
+*Created with 🤍 by frqme*
