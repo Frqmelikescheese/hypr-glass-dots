@@ -2,10 +2,10 @@
 
 A high-end, frosted glass aesthetic for Hyprland v0.54.2+, featuring white accents, snappy animations, and a focus on clean usability.
 
-![Preview](https://raw.githubusercontent.com/1amSimp1e/dots/late-night-%F0%9F%8C%83/ScreenShots/HyprLand/preview.png) *(Note: Placeholder image)*
+![Preview]() *(Note: Placeholder image)*
 
 ## ✨ Features
-- **Modern Syntax:** Fully compatible with Hyprland v0.54.2+ (No more config errors).
+- **Modern Syntax:** Fully compatible with Hyprland v0.54.2+.
 - **Aesthetic:** Frosted glass blur, solid white gradient borders, andsnappy animations.
 - **Waybar:** Single long, blurred glass bar with persistent workspaces and system info.
 - **Rofi:** Centered, blurred app launcher with a clean search UI.
