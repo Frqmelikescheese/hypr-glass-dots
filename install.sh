@@ -112,7 +112,7 @@ spinner $!
 echo -e "${WHITE}Done.${NC}"
 
 # 4. Configs
-echo -ne "${CYAN}[3/5]${NC} Applying Glass/Gold configurations..."
+echo -ne "${CYAN}[3/5]${NC} Applying Glass/Red configurations..."
 if [ ! -d "configs" ]; then
     echo -e "${RED}Error.${NC} 'configs/' directory not found in current path."
     exit 1
