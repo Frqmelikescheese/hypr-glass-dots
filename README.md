@@ -36,11 +36,13 @@ Log out and log back in to enjoy your new Ultimate Glass setup!
 - `SUPER + M`: Emergency Exit (to login screen)
 - `SUPER + [1-9]`: Switch Workspaces
 - `SUPER + +/-`: Adjust Brightness (15% steps)
-
+- `SUPER + Print`: Screenshot entire monitor
+- `Print`: Select a area to screenshot
+- `SUPER + T` Open firefox
+- `SUPER + V` Toggle floating for focued window
+~ `SUPER + H` Open rofi clipboard
 ## 🛠️ Requirements
 - Arch Linux
 - A working Hyprland installation
-- `gh` (for pushing your own changes)
-
 ---
 *Created with 🤍 by frqme*
