@@ -2,7 +2,7 @@
 
 A high-end, frosted glass aesthetic for Hyprland v0.54.2+, featuring white accents, snappy animations, and a focus on clean usability.
 
-![Preview](https://github.com/Frqmelikescheese/hypr-glass-dots/blob/master/image(1).png)
+![Preview](https://github.com/Frqmelikescheese/hypr-glass-dots/blob/master/ScreenShot.png)
 
 ## ✨ Features
 - **Modern Syntax:** Fully compatible with Hyprland v0.54.2+.
