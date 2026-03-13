@@ -40,7 +40,7 @@ Log out and log back in to enjoy your new Ultimate Glass setup!
 - `Print`: Select a area to screenshot
 - `SUPER + T` Open firefox
 - `SUPER + V` Toggle floating for focued window
-~ `SUPER + H` Open rofi clipboard
+- `SUPER + H` Open rofi clipboard
 ## 🛠️ Requirements
 - Arch Linux
 - A working Hyprland installation
