@@ -2,12 +2,11 @@
     "layer": "top",
     "position": "top",
     "height": 40,
-    "margin": "8 10 0 10",
+    "margin": "5 10 0 10",
     "spacing": 4,
     "modules-left": [
         "hyprland/workspaces",
-        "custom/cava",
-        "custom/weather"
+        "custom/cava"
     ],
     "modules-center": [
         "clock",
@@ -21,7 +20,6 @@
         "memory",
         "network",
         "battery",
-        "custom/calc",
         "custom/power"
     ],
 
@@ -35,13 +33,6 @@
     "custom/cava": {
         "exec": "/home/frqme/.config/waybar/scripts/waybar-cava.sh",
         "format": "{}",
-        "tooltip": false
-    },
-
-    "custom/weather": {
-        "format": "{}",
-        "interval": 3600,
-        "exec": "/home/frqme/.config/waybar/scripts/weather.sh",
         "tooltip": false
     },
 
@@ -126,15 +117,9 @@
         "spacing": 10
     },
 
-    "custom/calc": {
-        "format": "",
-        "on-click": "rofi -show calc -modi calc -no-show-match -no-sort",
-        "tooltip": false
-    },
-
     "custom/power": {
         "format": "",
-        "on-click": "/home/frqme/.config/hypr/scripts/powermenu.sh",
+        "on-click": "~/.config/hypr/scripts/powermenu.sh",
         "tooltip": false
     }
 }

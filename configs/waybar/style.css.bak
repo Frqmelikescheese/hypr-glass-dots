@@ -1,0 +1,118 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 14px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: rgba(26, 27, 38, 0.5); /* Semi-transparent dark blue */
+    color: #c0caf5;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+#workspaces, #clock, #battery, #cpu, #memory, #network, #pulseaudio, #tray, #window, #custom-power, #backlight, #custom-media, #custom-cava {
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    padding: 0 12px;
+    margin: 5px 3px;
+    border-radius: 10px;
+}
+
+/* Hover effects for all modules */
+#workspaces:hover, #clock:hover, #battery:hover, #cpu:hover, #memory:hover, #network:hover, #pulseaudio:hover, #backlight:hover, #custom-media:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Module-specific colors */
+#workspaces {
+    background: rgba(137, 180, 250, 0.15);
+}
+
+#workspaces button {
+    padding: 0 5px;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+#workspaces button.active {
+    color: #89b4fa;
+    font-weight: bold;
+}
+
+#workspaces button.urgent {
+    color: #f38ba8;
+}
+
+#custom-media, #custom-cava {
+    color: #a6e3a1; /* Greenish for media */
+    background: rgba(166, 227, 161, 0.15);
+}
+
+#clock {
+    color: #f9e2af;
+    background: rgba(249, 226, 175, 0.15);
+}
+
+#pulseaudio {
+    color: #89dceb;
+    background: rgba(137, 220, 235, 0.15);
+}
+
+#backlight {
+    color: #fab387;
+    background: rgba(250, 179, 135, 0.15);
+}
+
+#cpu {
+    color: #cba6f7;
+}
+
+#memory {
+    color: #eba0ac;
+}
+
+#battery {
+    color: #a6e3a1;
+}
+
+#battery.warning {
+    color: #fab387;
+}
+
+#battery.critical {
+    color: #f38ba8;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#cpu.critical, #memory.critical, #battery.critical {
+    color: #f38ba8;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#network {
+    color: #b4befe;
+}
+
+#custom-power {
+    color: #f38ba8;
+    background: rgba(243, 139, 168, 0.15);
+}
+
+@keyframes blink {
+    to {
+        background-color: #f38ba8;
+        color: #11111b;
+    }
+}

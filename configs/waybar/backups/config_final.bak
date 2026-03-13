@@ -1,0 +1,82 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 40,
+    "margin": "5 10 0 10",
+    "modules-left": [
+        "hyprland/workspaces",
+        "custom/cava"
+    ],
+    "modules-center": [
+        "clock",
+        "custom/media"
+    ],
+    "modules-right": [
+        "tray",
+        "cpu",
+        "network",
+        "battery",
+        "custom/power"
+    ],
+    "hyprland/workspaces": {
+        "all-outputs": true,
+        "format": "{name}",
+        "persistent_workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": [],
+            "6": [],
+            "7": [],
+            "8": [],
+            "9": [],
+            "10": []
+        }
+    },
+    "custom/cava": {
+        "exec": "/home/frqme/.config/waybar/scripts/waybar-cava.sh",
+        "format": "{}",
+        "tooltip": false
+    },
+    "custom/media": {
+        "format": "{icon} {text}",
+        "return-type": "json",
+        "max-length": 40,
+        "format-icons": {
+            "Paused": "",
+            "Playing": ""
+        },
+        "on-click": "playerctl play-pause",
+        "on-click-right": "playerctl next",
+        "on-click-middle": "playerctl previous",
+        "exec": "/home/frqme/.config/waybar/scripts/mediaplayer.sh 2> /dev/null"
+    },
+    "clock": {
+        "format": " {:%H:%M}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+    "tray": {
+        "icon-size": 15,
+        "spacing": 10
+    },
+    "cpu": {
+        "format": " {usage}%",
+        "tooltip": false
+    },
+    "network": {
+        "format-wifi": " {signalStrength}%",
+        "format-ethernet": "",
+        "on-click": "nm-connection-editor"
+    },
+    "battery": {
+        "bat": "BAT1",
+        "format": "{icon} {capacity}%",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "custom/power": {
+        "format": "",
+        "on-click": "~/.config/hypr/scripts/powermenu.sh",
+        "tooltip": false
+    }
+}

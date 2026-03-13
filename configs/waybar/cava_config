@@ -1,0 +1,9 @@
+[general]
+bars = 12
+sleep_timer = 10
+
+[output]
+method = raw
+raw_target = /dev/stdout
+data_format = ascii
+ascii_max_range = 7

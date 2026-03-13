@@ -1,4 +1,10 @@
 #!/bin/bash
-# Wait for PipeWire-Pulse to be ready
+
+# Kill any existing waybar instances
+pkill waybar
+
+# Wait for pipewire
 sleep 2
-waybar
+
+# Launch waybar
+waybar &

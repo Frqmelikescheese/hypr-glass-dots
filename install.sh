@@ -65,7 +65,7 @@ DEPS=(
     ttf-jetbrains-mono-nerd ttf-font-awesome
     nwg-look arc-gtk-theme papirus-icon-theme
     xdg-desktop-portal-hyprland xdg-desktop-portal-gtk
-    qt5-wayland qt6-wayland
+    qt5-wayland qt6-wayland cliphist rofi-calc wl-clipboard
 )
 
 # Use a log file for errors
