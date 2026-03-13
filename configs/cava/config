@@ -13,6 +13,7 @@ source = auto
 method = ncurses
 
 [color]
+foreground = '#FFD700'
 gradient = 1
 gradient_count = 6
 gradient_color_1 = '#593E1A'

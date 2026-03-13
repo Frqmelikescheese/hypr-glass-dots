@@ -140,6 +140,9 @@ echo -ne "${CYAN}[4/5]${NC} Applying system-wide optimizations..."
     # Ownership
     chown -R "$REAL_USER:$REAL_USER" "$REAL_HOME/.config"
 
+    # Shell alias
+    echo "alias pipes='pipes.sh -c 3'" >> "$REAL_HOME/.bashrc"
+
     # Group additions
     usermod -aG video "$REAL_USER" || true
     
