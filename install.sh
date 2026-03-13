@@ -147,6 +147,9 @@ echo -ne "${CYAN}[4/5]${NC} Applying system-wide optimizations..."
     # Attempting to enable user services as the real user
     # Note: this might fail in a non-interactive/no-dbus environment, which is fine
     sudo -u "$REAL_USER" DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/$(id -u $REAL_USER)/bus" systemctl --user enable --now pipewire pipewire-pulse wireplumber > /dev/null 2>&1 || true
+
+    # Shell Alias
+    echo "alias pipes='pipes.sh -c 6'" >> "$REAL_HOME/.bashrc"
 ) >> "$LOG_FILE" 2>&1 &
 spinner $!
 echo -e "${WHITE}Done.${NC}"

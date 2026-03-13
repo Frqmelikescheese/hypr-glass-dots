@@ -14,4 +14,4 @@ method = ncurses
 
 [color]
 background = default
-foreground = cyan
+foreground = 'cyan'
