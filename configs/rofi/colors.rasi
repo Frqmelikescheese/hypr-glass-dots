@@ -1,15 +1,14 @@
-
 /**
  *
- * Gold & Black Gradient Theme
+ * Red & Black Gradient Theme
  *
  **/
 
 * {
-    background:     #0d0d0dF2; /* Semi-transparent black */
-    background-alt: #1a1a1aE6; /* Deep Bronze shadow */
-    foreground:     #FFD700FF; /* Bright Gold */
-    selected:       #D4AF37FF; /* Rich Brass */
-    active:         #FFF8E7FF; /* Champagne */
-    urgent:         #FF2222FF; /* Crimson for alerts */
+    background:     #000000CC;
+    background-alt: #1A1A1ACC;
+    foreground:     #FF4444FF;
+    selected:       #B22222FF;
+    active:         #FF4444FF;
+    urgent:         #FF4444FF;
 }

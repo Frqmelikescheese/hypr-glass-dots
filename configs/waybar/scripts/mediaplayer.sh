@@ -1,6 +1,12 @@
 #!/bin/bash
-
-# Simple script for Waybar custom/media
-# Requirements: playerctl
-
-playerctl --follow metadata --format '{"text": "{{artist}} - {{title}}", "alt": "{{status}}", "class": "{{status}}", "tooltip": "{{artist}} - {{title}} ({{album}})"}'
+while true; do
+  player_status=$(playerctl status 2>/dev/null)
+  if [ "$player_status" = "Playing" ]; then
+    echo "$(playerctl metadata --format '{"text": "{{artist}} - {{title}}", "alt": "{{status}}", "class": "{{status}}"}' 2>/dev/null)"
+  elif [ "$player_status" = "Paused" ]; then
+    echo "$(playerctl metadata --format '{"text": "{{artist}} - {{title}}", "alt": "{{status}}", "class": "{{status}}"}' 2>/dev/null)"
+  else
+    echo '{"text": "No Media", "alt": "Stopped", "class": "Stopped"}'
+  fi
+  sleep 1
+done

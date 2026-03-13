@@ -153,6 +153,7 @@ echo -e "${WHITE}Done.${NC}"
 
 # 6. Finalizing
 echo -ne "${CYAN}[5/5]${NC} Finalizing installation..."
+echo "alias pipes='pipes.sh -c 1'" >> "$REAL_HOME/.bashrc"
 sleep 1
 echo -e "${WHITE}Done.${NC}"
 echo -e ""
