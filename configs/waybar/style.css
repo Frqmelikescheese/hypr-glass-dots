@@ -7,97 +7,46 @@
 }
 
 window#waybar {
-    /* Pure Glassmorphism: Light, transparent, and with high-blur */
-    background: rgba(255, 255, 255, 0.08); 
-    color: #ffffff;
+    /* Pure Glass Glass & Gold */
+    background: rgba(10, 10, 10, 0.4); 
+    color: #FFD700;
+    border-radius: 15px;
+    border: 1px solid rgba(212, 175, 85, 0.3);
+}
+
+/* Modules as Floating Pill Panels */
+#workspaces, #clock, #custom-media, #custom-cava, .modules-right, .modules-left {
+    background: rgba(212, 175, 85, 0.1);
     border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    margin: 5px 10px 0 10px;
-    transition-property: background-color;
-    transition-duration: .5s;
-    /* This depends on the compositor having blur enabled for the waybar layer */
-}
-
-/* Base style for ALL modules (Restoring the 'before' feel) */
-#workspaces, #clock, #battery, #cpu, #memory, #network, #pulseaudio, #tray, #window, #custom-launcher, #custom-power, #backlight, #custom-media, #custom-cava, #custom-weather, #custom-calc {
-    background: transparent;
-    color: #ffffff;
-    padding: 0 12px;
-    margin: 4px 0;
-}
-
-/* Accented modules (The 'Glass' containers) */
-#custom-media, #custom-cava, #custom-weather, #custom-calc, #workspaces {
-    background: rgba(255, 255, 255, 0.12);
-    border-radius: 10px;
+    border: 1px solid rgba(212, 175, 85, 0.15);
     margin: 4px 6px;
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 0 12px;
 }
 
 #workspaces button {
     padding: 0 8px;
-    color: rgba(255, 255, 255, 0.4);
-    border-radius: 6px;
+    color: rgba(212, 175, 85, 0.5);
+    border-radius: 8px;
     transition: all 0.3s ease;
 }
 
 #workspaces button.active {
-    color: #ffffff;
-    background: rgba(255, 255, 255, 0.15);
-    font-weight: bold;
-}
-
-#workspaces button:hover {
-    background: rgba(255, 255, 255, 0.1);
-    color: #ffffff;
-}
-
-/* Specific module colors to pop against the white/glass */
-#custom-weather {
-    color: #89dceb;
-}
-
-#custom-calc {
-    color: #f5c2e7;
+    background: linear-gradient(135deg, #D4AF37 0%, #FFD700 50%, #B8860B 100%);
+    color: #000000;
+    font-weight: 800;
+    box-shadow: 0 0 8px rgba(212, 175, 85, 0.4);
 }
 
 #clock {
-    font-weight: bold;
-    color: #f9e2af;
+    color: #FFF8E7; /* Champagne Gold */
+    font-weight: 900;
+}
+
+#pulseaudio, #network, #battery, #tray {
+    padding: 0 8px;
 }
 
 #custom-power {
-    color: #f38ba8;
-    padding-right: 15px;
-    font-size: 18px;
-}
-
-#pulseaudio {
-    color: #89b4fa;
-}
-
-#network {
-    color: #a6e3a1;
-}
-
-#battery {
-    color: #fab387;
-}
-
-/* Blink effect for critical battery */
-#battery.critical:not(.charging) {
-    background-color: #f38ba8;
-    color: #ffffff;
-    animation-name: blink;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-
-@keyframes blink {
-    to {
-        background-color: transparent;
-        color: #f38ba8;
-    }
+    color: #FF4444;
+    padding: 0 5px 0 10px;
 }

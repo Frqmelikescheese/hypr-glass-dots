@@ -1,17 +1,15 @@
 
 /**
  *
- * Author : Levi Lacoss (fishyfishfish55)
- * Github : @fishyfishfish55
+ * Gold & Black Gradient Theme
  *
- * Colors
  **/
 
 * {
-    background:     #15161EFF;
-    background-alt: #1A1B26FF;
-    foreground:     #C0CAF5FF;
-    selected:       #FB958BFF;
-    active:         #414868FF;
-    urgent:         #F7768EFF;
+    background:     #0d0d0dF2; /* Semi-transparent black */
+    background-alt: #1a1a1aE6; /* Deep Bronze shadow */
+    foreground:     #FFD700FF; /* Bright Gold */
+    selected:       #D4AF37FF; /* Rich Brass */
+    active:         #FFF8E7FF; /* Champagne */
+    urgent:         #FF2222FF; /* Crimson for alerts */
 }

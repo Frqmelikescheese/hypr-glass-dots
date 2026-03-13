@@ -13,5 +13,11 @@ source = auto
 method = ncurses
 
 [color]
-background = default
-foreground = cyan
+gradient = 1
+gradient_count = 6
+gradient_color_1 = '#593E1A'
+gradient_color_2 = '#996515'
+gradient_color_3 = '#D4AF37'
+gradient_color_4 = '#FFD700'
+gradient_color_5 = '#F9E2AF'
+gradient_color_6 = '#FFF8E7'

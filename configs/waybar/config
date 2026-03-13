@@ -2,26 +2,21 @@
     "layer": "top",
     "position": "top",
     "height": 40,
-    "margin": "8 10 0 10",
+    "margin": "8 15 0 15",
     "spacing": 4,
+    "fixed-center": true,
     "modules-left": [
         "hyprland/workspaces",
-        "custom/cava",
-        "custom/weather"
+        "custom/cava"
     ],
     "modules-center": [
-        "clock",
-        "custom/media"
+        "clock"
     ],
     "modules-right": [
         "tray",
         "pulseaudio",
-        "backlight",
-        "cpu",
-        "memory",
         "network",
         "battery",
-        "custom/calc",
         "custom/power"
     ],
 
@@ -38,27 +33,6 @@
         "tooltip": false
     },
 
-    "custom/weather": {
-        "format": "{}",
-        "interval": 3600,
-        "exec": "/home/frqme/.config/waybar/scripts/weather.sh",
-        "tooltip": false
-    },
-
-    "custom/media": {
-        "format": "{icon} {text}",
-        "return-type": "json",
-        "max-length": 40,
-        "format-icons": {
-            "Paused": "",
-            "Playing": ""
-        },
-        "on-click": "playerctl play-pause",
-        "on-click-right": "playerctl next",
-        "on-click-middle": "playerctl previous",
-        "exec": "/home/frqme/.config/waybar/scripts/mediaplayer.sh 2> /dev/null"
-    },
-
     "clock": {
         "format": " {:%H:%M}",
         "format-alt": "󰃭 {:%Y-%m-%d}",
@@ -73,32 +47,6 @@
         },
         "on-click": "pavucontrol",
         "scroll-step": 5
-    },
-
-    "backlight": {
-        "format": "{icon} {percent}%",
-        "format-icons": ["󰃞", "󰃟", "󰃠"],
-        "on-scroll-up": "brightnessctl set 5%+",
-        "on-scroll-down": "brightnessctl set 5%-"
-    },
-
-    "cpu": {
-        "interval": 10,
-        "format": " {usage}%",
-        "max-length": 10,
-        "states": {
-            "critical": 90
-        }
-    },
-
-    "memory": {
-        "interval": 30,
-        "format": " {}%",
-        "format-alt":" {used}GiB",
-        "max-length": 10,
-        "states": {
-            "critical": 80
-        }
     },
 
     "network": {
@@ -124,12 +72,6 @@
     "tray": {
         "icon-size": 18,
         "spacing": 10
-    },
-
-    "custom/calc": {
-        "format": "",
-        "on-click": "rofi -show calc -modi calc -no-show-match -no-sort",
-        "tooltip": false
     },
 
     "custom/power": {
